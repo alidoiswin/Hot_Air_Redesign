@@ -1,0 +1,84 @@
+@import url("colors.css");
+@import url("typography.css");
+
+body {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    border-image-width: 100%;
+  }
+  .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  }
+}
+
+.button {
+    background-color: #3d52a2;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.top {
+  top: 1%;
+}
+
+.bottom {
+  top: 20%;
+}
+
+.navbar {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 20px 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* keeps them on the right */
+  gap: 40px; /* spacing between links */
+}
+
+
