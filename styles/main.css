@@ -202,11 +202,11 @@ body {
   border-radius: 20px;
   overflow: hidden; 
   background: #f9fafb;
-  outline: solid 1px #e8eaed;
+  border: 3px solid #3d52a2
 }
 
 .location-content {
-  padding: 20px;
+  padding: 33px;
 }
 
 .location-content h3 {
@@ -227,7 +227,7 @@ body {
 /*footer section*/
 
 .footer {
-  background: #e6eef5;
+  background: linear-gradient(to top, #d8edfd, white);
   padding: 80px 40px;
 }
 
