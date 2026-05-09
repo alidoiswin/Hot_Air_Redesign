@@ -211,6 +211,187 @@ html {
   font-size: 14px;
 }
 
+/* =========================
+   MELBOURNE PAGE
+========================= */
+
+/*main section*/
+
+.description {
+  background: linear-gradient(to bottom, #d8edfd, white);
+  padding: 10px 60px 100px;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 120px;
+  color: #3d52a2;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+/*decription*/
+
+.description-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 60px;
+}
+
+.description-box {
+  background: white;
+  border: 3px solid #7291e5;
+  border-radius: 30px;
+  width: 60%;
+  padding: 1px 40px;
+}
+
+.description-box h3 {
+  color: #006ac2;
+  font-size: 50px;
+}
+
+.description-box h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/*polaroids*/
+
+.description-polaroid-imgs {
+  transform: rotate(8deg);
+  box-shadow: 0 5px 25px grey;
+  width: 30%;
+}
+
+.description-polaroid-imgs img {
+  width: 100%;
+  display: block;
+
+}
+
+/*safety*/
+
+.safety {
+  padding: 100px 70px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  background: white;
+}
+.safety-polaroid-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.safety-polaroid-1,
+.safety-polaroid-2 {
+  width: 390px;
+  box-shadow: 0 5px 20px grey;
+}
+
+.safety-polaroid-1 {
+  transform: rotate(-7deg);
+}
+
+.safety-polaroid-2 {
+  transform: rotate(7deg);
+}
+
+.safety-polaroid-imgs img {
+  width: 100%;
+  display: block;
+}
+
+.safety-box {
+  background: white;
+  border: 3px solid #3d52a2;
+  border-radius: 20px;
+  padding: 40px;
+  flex: 1;
+}
+
+.safety-box h3 {
+  color: #006ac2;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.safety-box h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/*packages*/
+
+.packages {
+  background: linear-gradient(to top, #d8edfd, white);
+  padding: 80px 70px;
+}
+
+.package-grids {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.package-card {
+  background: #f9fafb;
+  border: 3px solid #006ac2;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.package-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 30px;
+}
+
+.card-content h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.card-content p {
+  font-size: 24px;
+}
+
+/*book button*/
+
+.package-card button {
+  width: 200px;
+  height: 60px;
+  margin: 0px auto 30px;
+  border: none;
+  border-radius: 20px;
+  background: #bfd7ff;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.package-card button:hover {
+  background: #9fc2ff;
+  transform: scale(1.05);
+}
+
 /* Mobile Ver*/
 
 @media screen and (max-width: 768px) {
@@ -230,7 +411,7 @@ html {
   }
 
   .top {
-    top: 5%;
+    top: 10%;
   }
 
   .bottom {
