@@ -144,6 +144,8 @@ html {
   font-size: 500%;
   text-align: center;
   color: #3d52a2;
+  margin-bottom: 1px;
+  text-shadow:2px 2px 5px grey;
 }
 
 .locations-grid {
@@ -157,7 +159,14 @@ html {
   border-radius: 20px;
   overflow: hidden; 
   background: #f9fafb;
-  border: 3px solid #3d52a2
+  box-shadow: 2px 2px 5px grey;
+}
+
+.location-card:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+  box-shadow: 10px 10px 20px grey;
+  border: #31a1eb;
 }
 
 .location-content {
@@ -355,6 +364,11 @@ html {
   justify-content: space-between;
 }
 
+.package-link{
+  text-decoration: none;
+  color: black;
+}
+
 .package-card img {
   width: 100%;
   height: 250px;
@@ -374,8 +388,6 @@ html {
   font-size: 24px;
 }
 
-/*book button*/
-
 .package-card button {
   width: 200px;
   height: 60px;
@@ -392,7 +404,146 @@ html {
   transform: scale(1.05);
 }
 
-/* Mobile Ver*/
+/* =========================
+   PACKAGE PAGE
+========================= */
+
+/* hero */
+
+.package-hero {
+  background: linear-gradient(to bottom, #d8edfd, white);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.package-hero h1 {
+  font-size: 110px;
+  color: #3d52a2;
+  margin-bottom: 10px;
+}
+
+.package-hero h2 {
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+/*info*/
+
+.package-info {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 60px;
+  padding: 0 70px 120px;
+}
+
+.info-box {
+  background: white;
+  border: 3px solid #7291e5;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 2px 20px rgb(207, 207, 207);
+}
+
+.info-box h3 {
+  color: #006ac2;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.info-box p,
+.info-box li {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.info-box ul {
+  padding-left: 30px;
+}
+
+/*booking*/
+
+.booking-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 0 70px 120px;
+  align-items: start;
+}
+
+/*left side*/
+
+.left-booking {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/*headings*/
+
+.date-section h3,
+.times-section h3,
+.passenger-section h3 {
+  color: #006ac2;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+/*date*/
+
+.date-picker {
+  width: 100%;
+  padding: 25px;
+  border-radius: 20px;
+  border: 2px solid #7291e5;
+  background: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+
+/*passengers*/
+
+.passenger-section {
+  text-align: left;
+}
+
+.passenger-dropdown {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #7291e5;
+  background: #bfd7ff;
+  font-size: 28px;
+  box-sizing: border-box;
+}
+
+/*time*/
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.time-btn {
+  height: 120px;
+  border-radius: 20px;
+  border: 2px solid #3d52a2;
+  background: #bfd7ff;
+  font-size: 35px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.time-btn:hover {
+  background: #9fc2ff;
+  transform: scale(1.01);
+}
+
+/* =========================
+   MOBILE
+========================= */
 
 @media screen and (max-width: 768px) {
   /*main section*/
