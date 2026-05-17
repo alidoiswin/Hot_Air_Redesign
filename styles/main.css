@@ -285,7 +285,6 @@ html {
 .description-polaroid-imgs img {
   width: 100%;
   display: block;
-
 }
 
 /*safety*/
@@ -465,7 +464,7 @@ html {
 
 .booking-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 80px;
   padding: 0 70px 120px;
   align-items: start;
@@ -541,6 +540,89 @@ html {
   transform: scale(1.01);
 }
 
+body{
+    margin:0;
+    background:white;
+}
+
+/*add-on*/
+.add-on-section{
+    width:100%;
+    padding:50px;
+    box-sizing:border-box;
+    background:linear-gradient(to top, #d8edfd, white);
+}
+
+.section-title{
+    font-size:50px;
+    color:#0b67c2;
+    margin-bottom:60px;
+    margin-left: 25px
+    ;
+}
+
+.addons-wrapper{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.addon-grid{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+}
+
+.addon-card{
+    width:340px;
+    min-height:220px;
+    border:2px solid black;
+    border-radius:20px;
+    background:white;
+    padding:30px;
+    box-sizing:border-box;
+}
+
+.addon-card h3{
+    font-size:30px;
+    margin:0 0 25px 0;
+    color:black;
+    font-weight: 600;
+}
+
+.addon-card p{
+    font-size:22px;
+    margin:0;
+    color:black;
+}
+
+.add-btn{
+    width:200px;
+    height:70px;
+    border:none;
+    border-radius:30px;
+    background:#bfd7ff;
+    font-size:30px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.summary-btn{
+    display:block;
+    margin:100px auto 0 auto;
+    padding:20px;
+    border:none;
+    border-radius:30px;
+    background:#006ac2;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
 /* =========================
    MOBILE
 ========================= */
@@ -607,31 +689,31 @@ html {
   grid-template-columns: 1fr;
   padding: 20px;
   gap: 20px;
-}
+  }
 
-.card-link {
-  display: block;
-}
+  .card-link {
+    display: block;
+  }
 
-.location-card {
-  border-radius: 25px;
-}
+  .location-card {
+    border-radius: 25px;
+  }
 
-.location-card img {
-  height: 250px;
-  object-fit: cover;
-}
+  .location-card img {
+    height: 250px;
+    object-fit: cover;
+  }
 
-.location-content {
-    text-align: center;
-    padding: 20px;
-}
+  .location-content {
+      text-align: center;
+      padding: 20px;
+  }
 
-.location-content p {
-  display: none;
-}
+  .location-content p {
+    display: none;
+  }
 
-/*footer section*/
+  /*footer section*/
 
   .footer-grid {
     grid-template-columns: 1fr;
@@ -639,4 +721,224 @@ html {
     text-align: center;
   }
   
+
+  /* =========================
+    MELBOURNE PAGE MOBILE
+  ========================= */
+
+  .hero-text h1 {
+    font-size: 70px;
+  }
+
+  .hero-text h2 {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .description {
+    padding: 20px;
+  }
+
+  .description-container {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .description-box {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .description-box h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .description-box h4 {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .description-polaroid-imgs {
+    display: none;
+  }
+
+  /*safety*/
+
+  .safety {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .safety-polaroid-imgs {
+    display: none;
+  }
+
+  .safety-polaroid-1,
+  .safety-polaroid-2 {
+    width: 90%;
+  }
+
+  .safety-box {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+
+  .safety-box h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .safety-box h4 {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  /*packages*/
+
+  .packages {
+    padding: 40px 20px;
+  }
+
+  .package-grids {
+    grid-template-columns: 1fr;
+  }
+
+  .package-card img {
+    height: 220px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .card-content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .package-card button {
+    width: 80%;
+    height: 55px;
+    font-size: 24px;
+  }
+
+  /* =========================
+    PACKAGE PAGE MOBILE
+  ========================= */
+
+  .package-hero {
+    padding: 40px 20px;
+  }
+
+  .package-hero h1 {
+    font-size: 52px;
+  }
+
+  .package-hero h2 {
+    font-size: 24px;
+  }
+
+  .package-info {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .info-box {
+    padding: 25px;
+  }
+
+  .info-box h3 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .info-box p,
+  .info-box li {
+    font-size: 20px;
+  }
+
+  /*booking section*/
+
+  .booking-section {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .date-section h3,
+  .times-section h3,
+  .passenger-section h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .date-picker,
+  .passenger-dropdown {
+    font-size: 20px;
+    padding: 18px;
+  }
+
+  .time-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .time-btn {
+    height: 60px;
+    font-size: 25px;
+  }
+
+  /*add ons*/
+
+  .add-on-section {
+    padding: 30px 20px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .addons-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .addon-card {
+    width: 100%;
+    max-width: 340px;
+    min-height: auto;
+  }
+
+  .addon-card h3 {
+    font-size: 24px;
+  }
+
+  .addon-card p {
+    font-size: 18px;
+  }
+
+  .add-btn {
+    width: 180px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .summary-btn {
+    width: 90%;
+    font-size: 24px;
+    padding: 18px;
+  }
 }
