@@ -1,31 +1,60 @@
 @import url("colors.css");
 @import url("typography.css");
 
-
-
-/*body main section*/
+/* =========================
+   MAIN PAGE
+========================= */
 
 body {
   margin: 0;
 }
 
+.title {
+  position: absolute;
+  color: white;
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.5),
+    0 0 40px rgba(255,255,255,0.5);
+  animation: mymove 3.5s ease-in-out infinite;
+}
+
+@keyframes mymove {
+  0% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-25px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+
 .button {
-    background-color: #3d52a2;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 15px;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-decoration: none;
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 18px 42px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  overflow: hidden;
 }
 
 .button:hover {
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transform: translateX(-50%) scale(1.08);
+  background: rgba(255,255,255,0.25);
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.35);
 }
 
 html {
@@ -42,6 +71,12 @@ html {
   display: block;
 }
 
+.main-video {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+
 .title {
   position: absolute;
   left: 50%;
@@ -54,33 +89,70 @@ html {
 }
 
 .bottom {
-  top: 20%;
+  top: 22%;
 }
 
 .navbar {
-  box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  z-index: 10;
-  padding: 20px 40px;
-  font-family: "Roboto", sans-serif;
+  z-index: 1000;
+  padding: 20px 50px;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  box-sizing: border-box;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.logo-nav {
+  color: rgb(0, 0, 0);
+  font-size: 38px;
+  text-decoration: none;
+
+  letter-spacing: 2px;
+}
+
+.nav-links,
+.auth-links {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
-.navbar nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; 
-  gap: 40px; 
+.navbar a:hover {
+  opacity: 0.75;
+  transform: translateY(-2px);
 }
 
+.search-container input {
+  padding: 14px 22px;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.2);
+  outline: none;
+  width: 260px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+}
 /*review section*/
 
 .reviews {
@@ -536,7 +608,7 @@ html {
 }
 
 .time-btn:hover {
-  background: #9fc2ff;
+  background: #dbdcdf;
   transform: scale(1.01);
 }
 
@@ -623,8 +695,22 @@ body{
     cursor:pointer;
 }
 
+.time-btn.selected{
+    background: #dbdcdf;
+    transform: scale(1.01);
+}
+
+.add-btn:hover:not(.selected) {
+  background: #dbdcdf;
+  transition-duration: 0.3s;
+}
+
+.add-btn.selected{
+  background: #dbdcdf;
+}
+
 /* =========================
-   MOBILE
+   MAIN MOBILE
 ========================= */
 
 @media screen and (max-width: 768px) {
@@ -934,11 +1020,13 @@ body{
     width: 180px;
     height: 60px;
     font-size: 24px;
+    border-radius: 18px;
   }
 
   .summary-btn {
     width: 90%;
     font-size: 24px;
     padding: 18px;
+    border-radius: 20px;
   }
 }

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melbourne</title>
+    <title>Packages</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
+    <script src="../scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -91,42 +92,35 @@
     <!--add ons-->
 
     <section class="add-on-section">
-
         <h2 class="rubik-bubbles-regular section-title">Add Ons</h2>
+        <main class="addons-wrapper">
 
-        <div class="addons-wrapper">
-
-            <div class="addon-grid">
-                <article class="addon-card">
+            <article class="addon-grid">
+                <div class="addon-card">
                     <h3 class="roboto-regular">Charcuterie Board - $20pp</h3>
                     <p class="roboto-regular">Mix of seasonal meats, cheeses, and fruits.</p>
-                </article>
-
+                </div>
                 <button class="add-btn">ADD</button>
-            </div>
+            </article>
 
-            <div class="addon-grid">
-                <article class="addon-card">
+            <article class="addon-grid">
+                <div class="addon-card">
                     <h3 class="roboto-regular">Photo Set - <br> $10pp</h3>
                     <p class="roboto-regular">Professionally taken group photos for your party.</p>
-                </article>
-
+                </div>
                 <button class="add-btn">ADD</button>
-            </div>
+            </article>
 
-            <div class="addon-grid">
-                <article class="addon-card">
+            <article class="addon-grid">
+                <div class="addon-card">
                     <h3 class="roboto-regular">Extensive Photo Set - $15pp</h3>
                     <p class="roboto-regular">Group and individual professional photos.</p>
-                </article>
-
+                </div>
                 <button class="add-btn">ADD</button>
-            </div>
+            </article>
 
-        </div>
-
-        <button class="summary-btn">Go To Summary</button>
-
+        </main>
+        <button class="summary-btn" onclick="saveBooking()">Go To Summary</button>
     </section>
     
 </body>

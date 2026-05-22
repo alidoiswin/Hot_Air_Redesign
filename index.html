@@ -9,30 +9,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
 
 <!--nav-->
 
-    <header class="navbar">
-            <nav>
-                <a href="#">Contacts</a>
-                <a href="#">Flights</a>
-                <a href="#">About</a>
-                <a href="#">Settings</a>
-                <a href="#">Login</a>
-                <a href="#">Create Account</a>
-            </nav>
-    </header>
+<header class="navbar">
+    <nav class="nav-container">
+
+        <a href="../index.html" class="logo-nav agbalumo-regular">
+            HOT AIR
+        </a>
+
+        <div class="nav-links">
+            <a href="#">Flights</a>
+            <a href="#">About</a>
+            <a href="#">Contacts</a>
+            <a href="#">Settings</a>
+        </div>
+
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search locations..."
+            >
+        </div>
+
+        <div class="auth-links">
+            <a href="#">Login</a>
+            <a href="#">Create Account</a>
+        </div>
+
+    </nav>
+</header>
 
 <!--main homepage section-->
 
     <section class="main">
         <div class="main-section">
             <div class="image-container">
-                <img src="assets/HotAirMainPage.jpg" alt="Hot Air Balloon Main Image"> 
-                <h1 class="agbalumo-regular title top">HOT</h1>
-                <h1 class="agbalumo-regular title bottom">AIR</h1>
+                <video autoplay muted loop playsinline class="main-video">
+                    <source src="assets/HotAirMainVid2.mp4" type="video/mp4">Your browser does not support the video tag.
+                </video>
+                <div class="hero-logo">
+                    <h1 class="agbalumo-regular title top">HOT</h1>
+                    <h1 class="agbalumo-regular title bottom">AIR</h1>
+                </div>
                 <a href="#locations" class="button rubik-bubbles-regular">START</a>
             </div>
         </div>
