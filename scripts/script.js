@@ -52,5 +52,22 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.getItem("bookingTime") || "Not selected";
   document.getElementById("summary-addons").textContent =
     localStorage.getItem("bookingAddons") || "None selected";
+    const passengers =
+  parseInt(localStorage.getItem("bookingPassengers"));
+
+let total = passengers * 280;
+const addons =
+  localStorage.getItem("bookingAddons");
+  if (addons.includes("Charcuterie")) {
+    total += 20 * passengers;
+  }
+  if (addons.includes("Photo Set")) {
+    total += 10 * passengers;
+  }
+  if (addons.includes("Extensive")) {
+    total += 15 * passengers;
+  }
+document.getElementById("summary-total").textContent =
+  "$" + total;
 
 });
