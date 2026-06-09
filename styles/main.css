@@ -768,6 +768,11 @@ body{
   font-size: 55px;
 }
 
+.confirmed-img {
+  width: 100%;
+  display: block;
+}
+
 .payment-sidebar {
   grid-area: payment;
   background: white;
@@ -1149,47 +1154,89 @@ input {
     border-radius: 20px;
   }
 
-  /* =========================
+/* =========================
    SUMMARY MOBILE
 ========================= */
 
 .summary-section {
-  padding: 30px 20px;
   grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "summary"
+    "payment";
+  gap: 25px;
+  padding: 20px;
 }
 
 .summary-section h1 {
   font-size: 55px;
-  margin-bottom: 30px;
   text-align: center;
 }
 
 .summary-card {
-  padding: 30px;
-  border-radius: 25px;
-
   display: flex;
   flex-direction: column;
-  gap: 30px;
+
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  padding: 20px;
+  gap: 20px;
 }
 
 .summary-card h2 {
-  font-size: 38px;
+  font-size: 32px;
   text-align: center;
 }
 
 .summary-card p {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
 }
 
 .summary-card strong {
-  font-size: 28px;
-  margin-bottom: 8px;
+  font-size: 24px;
 }
 
 .summary-total {
   text-align: center;
-  font-size: 35px;
+  font-size: 32px;
+}
+
+.payment-sidebar {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.payment-sidebar h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.payment-form input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 14px;
+}
+
+.payment-form label {
+  font-size: 16px;
+}
+
+.card-row {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-row div {
+  width: 100%;
+}
+
+.confirmed-img {
+  width: 180%;
+  margin-left: -40%;
 }
 }

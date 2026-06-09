@@ -134,7 +134,7 @@ function confirmed(event) {
   }
 
   document.body.innerHTML = `
-    <img src="../assets/Confirmed2.png"
-         style="width:100%; object-fit:cover;">
-  `;
+  <img class="confirmed-img"
+       src="../assets/Confirmed2.png">
+`;
 }
